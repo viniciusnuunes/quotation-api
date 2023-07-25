@@ -4,7 +4,7 @@ API criada para estudos do Golang
 
 ### Tecnologias utilizadas
 
-- Golang
+- Go
 - Gin
 - Gorm
 - Postgres
