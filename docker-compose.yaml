@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    container_name: quotation-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
