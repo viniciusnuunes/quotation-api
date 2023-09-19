@@ -2,9 +2,28 @@ version: '3'
 
 services:
   app:
-    container_name: quotation-api
+    container_name: app
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - '8080:8080'
+    depends_on:
+      - db
+    links:
+      - db
+
+  db:
+    container_name: db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - "5432:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:
