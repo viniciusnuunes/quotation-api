@@ -12,6 +12,31 @@ API criada para estudos do Golang
 - Docker Compose
 - Redis
 
+### Rodando o Projeto
+
+É necessário ter instalado as seguintes ferramentas
+
+| Tool           | Version  |
+| -------------- | -------- |
+| Docker         | 20.10.21 |
+| Docker Compose | 2.13.0   |
+
+Para instalar as depencências, fazer build do docker e iniciar o projeto, basta o único comando abaixo
+```sh
+docker compose up --build
+```
+
+Caso já esteja com o build completo, utilizar o comando
+```sh
+docker compose up
+```
+
+O projeto estará rodando em
+
+```sh
+localhost:8080
+```
+
 ### Materiais de Estudo para a criação do Projeto
 
 #### Padrões de Projeto
